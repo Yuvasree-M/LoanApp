@@ -1,0 +1,30 @@
+{
+  "name": "loan-management-system",
+  "version": "1.0.0",
+  "description": "Full-Stack Loan Management System - React + Node.js + MS SQL",
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev:backend": "node backend/server.js",
+    "dev:frontend": "npx vite --config frontend/vite.config.js",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "start:backend": "node backend/server.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "axios": "^1.13.6",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "lucide-react": "^1.7.0",
+    "mssql": "^12.2.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-hot-toast": "^2.6.0",
+    "react-router-dom": "^7.13.2",
+    "recharts": "^3.8.1",
+    "vite": "^8.0.3"
+  }
+}
