@@ -7,7 +7,9 @@
     "dev:backend": "node backend/server.js",
     "dev:frontend": "npx vite --config frontend/vite.config.js",
     "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
-    "start:backend": "node backend/server.js"
+    "start:backend": "node backend/server.js",
+
+    "build": "cd frontend && npm install && npm run build"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
